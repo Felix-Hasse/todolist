@@ -12,6 +12,9 @@ import React from 'react';
             setInputText('');
         
       }
+      const statusHandler=(e)=>{
+        console.log(e.target.value);
+      }
       return (
           <form>
                 <input value={inputText} onChange={inputTextHandler} type="text" class='todo-input' />

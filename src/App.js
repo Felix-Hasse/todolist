@@ -7,6 +7,7 @@ import TodoList from './components/TodoList.js';
 function App() {
   const [inputText, setInputText] = useState('');
   const [todos, setTodos] = useState([]);
+  const [status, setStatus] = useState('all');
   return (
     <div className="App">
   <header>
@@ -16,7 +17,7 @@ function App() {
     todos={todos} 
     setTodos={setTodos} 
     setInputText={setInputText} />
-    <TodoList todos={todos}/>
+    <TodoList setTodos={setTodos} todos={todos}/>
     </div>
   );
 }
